@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fresh</a>
+            </div>
+            <nav id="nav">
+                <ul class="bar">
+                    <li><a href="Accueil.html" onclick="selection()">Accueil</a></li>
+                    <li><a href="A-propos.html" onclick="seleccionar()">A-propos  </a></li>
+         
+                    <li><a href="Mes projets.html" onclick="seleccionar()">Mes projets</a></li>
+                    <li><a href="portfolio.html" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="contact.html" onclick="seleccionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu.png" alt="menu" class="menu">
+        </header>
+    </div>
+    <section id="portfolio" class="portfolio">
+        <div class="content-seccion">
+            <h2>Portfolio</h2>
+            <div class="image-cv">
+                <div class="CV">
+                    <img src="image/CV1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mon CV</h3>
+                        <p>Profesionel</p>
+                    </div>
+                </div>
+                <div class="CV">
+                    <img src="image/CV3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mon CV</h3>
+                        <p>Profesionel</p>
+                    </div>
+                </div>
+                <div class="CV">
+                    <img src="image/CV4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mon CV</h3>
+                        <p>Profesionel</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const bar = document.querySelector(".bar")
+        menu.addEventListener('click',()=>{
+        nav .classList.toggle('mobile')
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fresh</a>
+            </div>
+            <nav id="nav">
+                <ul class="bar">
+                    <li><a href="Accueil.html" onclick="selection()">Accueil</a></li>
+                    <li><a href="A-propos.html " onclick="seleccionar()">A-propos  </a></li>
+         
+                    <li><a href="Mes projets.html" onclick="seleccionar()">Mes projets</a></li>
+                    <li><a href="portfolio.html" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="contact.html" onclick="seleccionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu.png" alt="menu" class="menu">
+        </header>
+    </div>
+    <!-- section accueil -->
+    <section id="Accueil" class="Accueil">
+        <div class="accueil-text">
+            <div class="slide">
+                <span class="one">Salut</span>
+                <span class="two">Je suis</span>
+            </div>
+            <h1>Moussa kouyate</h1>
+            <h3>UI/UX <span>Designer</span></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Delectus, accusamus placeat,</p>
+            <div class="button">
+                <a href="image/cvpro.pdf" class="btn">Télécharge CV</a>
+    
+            </div>
+            
+        </div>
+        <img src="image/Fresh.png" alt="">
+    </section>
+    <script>
+        const menu = document.querySelector(".menu")
+        const bar = document.querySelector(".bar")
+        menu.addEventListener('click',()=>{
+        nav .classList.toggle('mobile')
+        })
+      </script>
+</body>
+</html> 

@@ -1,0 +1,232 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #767272;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color:#d42020;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body{
+  background-color: rgb(129, 121, 121);;
+
+}
+.contact {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fef1df;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.contact form{
+  padding: 30px;
+  background-color: rgb(61, 57, 57);
+  /* border-radius: 10px; */
+  color: #fff;
+  
+}
+ .contact form h1 {
+  font-size: 20px;
+  color: #fff;
+}
+.contact form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: #747cdf;
+}
+.contact form .corps-formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.contact form .corps-formulaire .groupe {
+  position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact form .corps-formulaire .gauche .groupe input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #747cdf;
+  border-radius: 5px;
+}
+.contact form .corps-formulaire .gauche .groupe i {
+  position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+  left: 0;
+  top: 25px;
+  padding: 9px 8px;
+  color: #747cdf;
+}
+.contact form .corps-formulaire .droite {
+  margin-left: 40px;
+}
+.contact form .corps-formulaire .droite .groupe {
+  height: 100%;
+}
+.contact form .corps-formulaire .droite .groupe textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid #747cdf;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+.contact form .pied-formulaire button {
+  margin-top: 10px;
+  background-color: #747cdf;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+ 
+}
+.contact form .pied-formulaire button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 920px) {
+  form .corps-formulaire .droite {
+    margin-left: 0px;
+  }
+}
+
+
+@media screen and (max-width: 920px){
+  .contact form{
+    /* margin-top: 50px;
+    background-color: rgb(61, 57, 57); */
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+header img{
+    width: 50px;
+    display: none;
+  } 
+  nav{
+    display: flex;
+  } 
+  @media screen and (max-width:675px) {
+    header{
+      padding: 0;
+    }
+    header .menu{
+      display: block;
+    }
+    
+    nav{
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #1918522a;
+      backdrop-filter: blur(12px);
+      width: 100%;
+      height: 100vh;
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      transition: all 0.5s ease;
+    
+    }
+    
+    .mobile{
+      margin-left: 0;
+    } 
+    header ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+  
+    } 
+    header nav li{
+      margin: 25px 0;
+      font-size: 1.2em;
+  
+    }
+    .Accueile .content-img img{
+      position: absolute;
+      width: -200px;
+      display: flex;
+      height: 400px;
+      left: 1159px;
+      top: 150px;
+      margin: -50px;
+      padding-bottom: 50px;
+    }
+    header .menu{
+      position: absolute;
+      top: 0;
+      left: 140px;
+      width: 30px;
+      margin-top: 29px;
+      margin-left: 50px
+    }
+  }

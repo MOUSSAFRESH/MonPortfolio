@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="A-propos.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fresh</a>
+            </div>
+            <nav id="nav">
+                <ul class="bar">
+                    <li><a href="Accueil.html" onclick="selection()">Accueil</a></li>
+                    <li><a href="A-propos.html" onclick="seleccionar()">A-propos  </a></li>
+         
+                    <li><a href="Mes projets.html" onclick="seleccionar()">Mes projets</a></li>
+                    <li><a href="portfolio.html" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="contact.html" onclick="seleccionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu.png" alt="menu" class="menu">
+        </header>
+    </div>
+    <section id="Mes projets" class="Mes projets">
+        <div class="Mes-img">
+            <img src="image/Fresh.png" alt="">
+        </div>
+        <div class="Mes-text">
+            <h2>A propos de <span>Moi</span> </h2>
+            <h4>Creater UI/UX Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit qui eos id error dolore! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit qui eos id error dolore! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit qui eos id error dolore! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit qui eos id error dolore! 
+            </p>
+        </div>
+    </section>
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const bar = document.querySelector(".bar")
+        menu.addEventListener('click',()=>{
+        nav .classList.toggle('mobile')
+        })
+      </script>
+</body>
+</html>

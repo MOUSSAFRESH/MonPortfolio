@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Mes projets.css">
+</head>
+<body>
+    
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fresh</a>
+            </div>
+            <nav id="nav">
+                <ul class="bar">
+                    <li><a href="Accueil.html" onclick="selection()">Accueil</a></li>
+                    <li><a href="A-propos.html" onclick="seleccionar()">A-propos  </a></li>
+         
+                    <li><a href="Mes projets.html" onclick="seleccionar()">Mes projets</a></li>
+                    <li><a href="portfolio.html" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="contact.html" onclick="seleccionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu.png" alt="menu" class="menu">
+        </header>
+    </div>
+    <section id="Mes-projets" class="Mes-projets">
+        <h2>Mes dernier projets</h2>
+        <div class="seccion">
+            <div class="galery">
+                <img src="image/ui-design.jpg" alt="">
+                <img src="image/pppp.jpg" alt="">
+                <img src="image/Prestataire.png" alt="">
+                <img src="image/f.jpg" alt="">
+                <img src="image/responsive.png" alt="">
+                <img src="image/ttt.jpeg" alt="">
+                <img src="image/Copie de téléchargement (2).jpg" alt="">
+                <img src="image/Visuel-UX.png" alt="">
+                <img src="image/loisir.webp" alt="">
+                <img src="image/images.png" alt="">
+    
+            </div>
+        </div>
+      </section>
+
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const bar = document.querySelector(".bar")
+        menu.addEventListener('click',()=>{
+        nav .classList.toggle('mobile')
+        })
+      </script>
+</body>
+</html>
